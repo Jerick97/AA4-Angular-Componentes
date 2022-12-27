@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col-8 border g-5 p-5">
+        <h1 class="text-white">Contenido</h1>
+        <h2>Home Component</h2>
+        <h3>{{name}}</h3>
+        <button class="btn btn-primary" (click)="changeName()">
+            Cambiar Nombre
+        </button>
+    </div>
+    <div class="col-4 border g-5 p-5">
+        <app-aside [nombreHijo]="name" (cambioNombreHijo)="hijoCambioNombre($event)"></app-aside> <!--entre [] porque es una propiedad-->
+    </div>
+</div>
+
+
